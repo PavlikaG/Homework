@@ -1,93 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
     <style>
-        .unseen-nots {
+        main {
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 900;
+            height: 1000;
+            border-radius: 5px;
             display: flex;
-            background-color: rgb(203, 229, 238);
-            margin: 10px;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .LeftScreen {
+            display: flex;
+            border: 1px solid blue;
+            background-image: url(./bg-sidebar-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            justify-content: flex-start;
+            width: 15%;
+            height: 85;
             border-radius: 10px;
+            margin: 5px;
+            flex-direction: column;
+            padding: 10%;
+            text-align: center;
+            justify-content: start;
         }
-        
-        #rizky {
-            border-style: groove;
+
+        .RightScreen {
+            border: 1px solid black;
+            width: 75%;
+            height: 85%;
+            border-radius: 10px;
+            flex-direction: column;
+            margin: 8px;
+            display: flex;
+            padding: 50px;
+
+
+        }
+
+        .border {
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 50%;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-color: white;
+            color: white;
+
+
+        }
+
+        .one {
+            color: white;
+            display: flex;
+            gap: 20px;
+        }
+
+        .blue {
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            display: flex;
+            height: 50px;
+            background-color: skyblue;
+        }
+
+        .bar1 {
             
-        }
-        .texttt {
-            margin: 15px;
-            
-        }
-        .loower {
-            display: fle
+            border: 2px solid purple;
+            text-align: center;
+            margin: 10px;
+            background-color:rgb(236, 236, 231);
+
         }
     </style>
-    
 </head>
+
 <body>
-
-    <h1> Notifications  3</h1>
-   
-        
-
-    <div class="unseen-nots">
-        <img src="avatar-mark-webber.webp"> 
-        <div class="texttt">
-        <p><strong> Mark webbber </strong> reacted to your recent post <strong> My first Tournament today!</strong></p>
-        <p>1m ago</p>
+    <main>
+        <div class="LeftScreen">
+            <div class="one">
+                <h1 class="border"> 1 </h1>
+                <div>
+                    <p> STEP 1</p>
+                    <p> YOUR INFO</p>
+                </div>
+            </div>
+            <div class="one">
+                <h1 class="border"> 2 </h1>
+                <div>
+                    <p> STEP 2</p>
+                    <p> SELECT PLAN</p>
+                </div>
+            </div>
+            <div class="one">
+                <h1 class="blue"> 3 </h1>
+                <div>
+                    <p> STEP 3</p>
+                    <p> ADD-ONS</p>
+                </div>
+            </div>
+            <div class="one">
+                <h1 class="border"> 4 </h1>
+                <div>
+                    <p> STEP 4</p>
+                    <p> SUMMARY</p>
+                </div>
+            </div>
         </div>
-    </div>
-    
+        <div class="RightScreen">
+            <h1 style="color: rgb(13, 13, 99)"> Pick add-ons</h1>
+            <h4> Add-ons help enhance your gaming experience </h4>
 
-    <div class="unseen-nots">
-        <img src="avatar-angela-gray.webp">
-        <div class="texttt">
-        <strong> Angela  Gray </strong> followed you
-        <p style="text-align: left ;">5m ago</p>
-    </div>
-    </div>
-    
-    <div class="unseen-nots">
-        <img src="avatar-jacob-thompson.webp">
-        <div class="texttt">
-             <strong>Jacob Thompson </strong> has joined your group <strong>Chess group</strong>
-            <p>1 day ago</p>
-        </div>
-    </div>
-
-    <div class="lower">
-        <img src="avatar-rizky-hasanuddin.webp" > 
-        <div class="loower">
-            <strong> Rizky hasanuddin </strong> sent you a private message
-            <p>5 days ago</p>
-            <p id="rizky"> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
-        </div>
-    </div>
-
-    <div class="lower">
-        <img src="avatar-kimberly-smith.webp" > <strong>Kimberly Smith </strong> commented on your picture
-        <p>1 week ago</p>
-
-    </div>
-
-    <div class="lower">
-        <img src="avatar-nathan-peterson.webp" > <strong> Nathan Peterson </strong> reacted to your recent post <strong> 5 end-game strategies to increase your win rate</strong>
-        <p>2weeks ago</p>
-
-    </div>
-
-    <div class="lower">
-        <img src="avatar-anna-kim.webp" > <strong> Anna Kim </strong> left the group <strong> Chess Club</strong>
-    </div>
+            <div class="bar1">
+                <img src="icon-checkmark.svg">
+                <h4> Online service </h1>
+                    <h4> access to multiplayer games </h4>
+                    <p> +$1/mo</p>
+            </div>
+            <div class="bar1">
+                <img src="icon-checkmark.svg">
+                <h4> Larger storage </h4>
+                <h4> Extra 1TB of cloud save</h4>
+                <p> +$2/mo </p>
+            </div>
+            <div class="bar1">
+                <h4> Customizable profile </h4>
+                <h4> custom theme on your profile</h4>
+                <p> +$2/mo </p>
+            </div>
+            <h3>Go Back</h3>
+            <h3> Next Step</h3>
+    </main>
 </body>
+
 </html>
-
-
-
-
-
-
-
